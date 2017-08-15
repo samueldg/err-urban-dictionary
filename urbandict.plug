@@ -1,0 +1,9 @@
+[Core]
+Name = UrbanDictionary
+Module = urbandict
+
+[Documentation]
+Description = Bot that looks up Urban Dictionary definitions.
+
+[Python]
+Version = 3
