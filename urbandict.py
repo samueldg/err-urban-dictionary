@@ -51,5 +51,4 @@ class UrbanDictionary(BotPlugin):
                 ('thumbs_up', definition.get('thumbs_up', 0)),
                 ('thumbs_down', definition.get('thumbs_down', 0)),
             )
-
         }
