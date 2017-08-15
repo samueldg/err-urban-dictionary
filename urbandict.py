@@ -36,7 +36,8 @@ class UrbanDictionary(BotPlugin):
     def get_json(url):
         """Fetch a URL returning JSON, and return it as a dict."""
         with urllib.request.urlopen(url) as api_response:
-            return json.load(api_response)
+            api_response_text = api_response.read().decode('utf8')
+        return json.loads(api_response_text)
 
     @staticmethod
     def format_definition_card(definition):
