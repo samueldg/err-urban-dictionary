@@ -25,7 +25,7 @@ class UrbanDictionary(BotPlugin):
             search_url = self.search_url_template.format(escaped_term)
             definitions = self.get_json(search_url)
 
-            if definitions['result_type'] == 'no_results':
+            if not definitions['list']:
                 return 'No such term: {0}!'.format(args)
 
         best_definition = definitions['list'][0]

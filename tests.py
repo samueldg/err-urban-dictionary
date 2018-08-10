@@ -23,7 +23,7 @@ def test_with_argument(testbot):
 
 
 def test_without_argument(testbot):
-    term = 'some-totally-nonexistent-term'
+    term = 'imnotactuallyaword'
     testbot.push_message('!ud ' + term)
     result = testbot.pop_message()
     assert "No such term: " + term in result
