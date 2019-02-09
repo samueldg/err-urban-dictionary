@@ -44,9 +44,10 @@ class UrbanDictionary(BotPlugin):
         """Formats a definition JSON from Urban Dictionary into a dictionary
         containing the keyword arguments for `BotPlugin.send_card()`.
         """
+        definition_text = definition['definition'].replace('[', '').replace(']', '')
         return {
             'title': definition['word'],
-            'body': '\n\n'.join([definition['definition'], definition['example']]),
+            'body': '\n\n'.join([definition_text, definition['example']]),
             'link': definition['permalink'],
             'fields': (
                 ('thumbs_up', definition.get('thumbs_up', 0)),
