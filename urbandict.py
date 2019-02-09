@@ -8,7 +8,7 @@ from errbot import BotPlugin
 
 class UrbanDictionary(BotPlugin):
 
-    api_url = 'http://api.urbandictionary.com/v0'
+    api_url = 'https://api.urbandictionary.com/v0'
     search_url_template = api_url + '/define?term={0}'
     random_term_url = api_url + '/random'
 
