@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/samueldg/err-urban-dictionary.svg?branch=master)](https://travis-ci.org/samueldg/err-urban-dictionary)
 
-**UrbanDictionary** is a bot that looks up Urban Dictionary definitions fo you.
+**UrbanDictionary** is a bot that looks up Urban Dictionary definitions for you.
 
 Note that Urban Dictionary definitions are fundamentally NSFW. Use with caution!
 
